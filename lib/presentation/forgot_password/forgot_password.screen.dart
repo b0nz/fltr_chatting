@@ -17,7 +17,7 @@ class ForgotPasswordScreen extends GetView<ForgotPasswordController> {
       appBar: AppBar(
         title: Text(
           'Forgot Password',
-          style: AppFont.header.copyWith(
+          style: AppFont.h4.copyWith(
             color: AppColor.blackComponent,
           ),
         ),

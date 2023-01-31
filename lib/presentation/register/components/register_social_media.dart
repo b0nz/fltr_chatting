@@ -12,7 +12,7 @@ class RegisterSocialMedia extends StatelessWidget {
       children: [
         Text(
           "Or login with",
-          style: AppFont.input,
+          style: AppFont.h6,
         ),
         16.heightBox,
         Row(

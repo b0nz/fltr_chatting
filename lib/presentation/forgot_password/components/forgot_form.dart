@@ -25,12 +25,12 @@ class ForgotForm extends StatelessWidget {
             children: [
               Text(
                 "Can request after",
-                style: AppFont.input,
+                style: AppFont.h6,
               ),
               8.widthBox,
               Text(
                 "00:15",
-                style: AppFont.input.copyWith(
+                style: AppFont.h6.copyWith(
                   color: AppColor.blue2,
                   fontWeight: FontWeight.bold,
                 ),

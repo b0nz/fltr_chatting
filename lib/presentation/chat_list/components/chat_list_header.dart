@@ -18,7 +18,7 @@ class ChatListHeader extends StatelessWidget {
             children: [
               Text(
                 "Chatting",
-                style: AppFont.header,
+                style: AppFont.h4,
               ),
               16.heightBox,
               AppInput(

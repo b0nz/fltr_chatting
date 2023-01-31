@@ -11,7 +11,6 @@ class ChatListContent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: ListView.builder(
-        padding: const EdgeInsets.symmetric(horizontal: 20),
         itemCount: 10,
         itemBuilder: (context, index) => _userListItem(),
       ),
@@ -19,50 +18,53 @@ class ChatListContent extends StatelessWidget {
   }
 
   Widget _userListItem() {
-    return GestureDetector(
+    return InkWell(
       onTap: () {
         Get.toNamed(Routes.CHAT_ROOM);
       },
       child: SizedBox(
         height: 80,
-        child: Row(
-          children: [
-            Container(
-              width: 60,
-              height: 60,
-              decoration: BoxDecoration(
-                color: Colors.red,
-                borderRadius: BorderRadius.circular(30),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          child: Row(
+            children: [
+              Container(
+                width: 60,
+                height: 60,
+                decoration: BoxDecoration(
+                  color: Colors.red,
+                  borderRadius: BorderRadius.circular(30),
+                ),
               ),
-            ),
-            10.widthBox,
-            Expanded(
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'User Name',
-                    style: AppFont.header,
-                  ),
-                  5.heightBox,
-                  Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                    style: AppFont.input,
-                    overflow: TextOverflow.ellipsis,
-                  ),
-                ],
+              10.widthBox,
+              Expanded(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'User Name',
+                      style: AppFont.h4,
+                    ),
+                    5.heightBox,
+                    Text(
+                      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                      style: AppFont.h6,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                  ],
+                ),
               ),
-            ),
-            const Text(
-              '12:00',
-              style: TextStyle(
-                fontSize: 14,
-                color: Colors.grey,
+              const Text(
+                '12:00',
+                style: TextStyle(
+                  fontSize: 14,
+                  color: Colors.grey,
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

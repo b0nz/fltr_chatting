@@ -29,12 +29,12 @@ class RegisterForm extends StatelessWidget {
             children: [
               Text(
                 "Already have an account?",
-                style: AppFont.input,
+                style: AppFont.h6,
               ),
               8.widthBox,
               Text(
                 "Login",
-                style: AppFont.input.copyWith(
+                style: AppFont.h6.copyWith(
                   color: AppColor.blue,
                   fontWeight: FontWeight.bold,
                 ),

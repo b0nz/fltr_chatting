@@ -6,18 +6,33 @@ class AppFont {
         fontWeight: FontWeight.w700,
       );
 
-  static TextStyle get header => const TextStyle(
-        fontSize: 19,
+  static TextStyle get h2 => const TextStyle(
+        fontSize: 30,
         fontWeight: FontWeight.w700,
       );
 
-  static TextStyle get input => const TextStyle(
-        fontSize: 11,
+  static TextStyle get h3 => const TextStyle(
+        fontSize: 24,
+        fontWeight: FontWeight.w700,
+      );
+
+  static TextStyle get h4 => const TextStyle(
+        fontSize: 18,
+        fontWeight: FontWeight.w700,
+      );
+
+  static TextStyle get h5 => const TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w700,
+  );
+
+  static TextStyle get h6 => const TextStyle(
+        fontSize: 12,
         fontWeight: FontWeight.w400,
       );
 
   static TextStyle get label => const TextStyle(
-        fontSize: 13,
+        fontSize: 14,
         fontWeight: FontWeight.w500,
       );
 }

@@ -18,12 +18,12 @@ class LoginFooter extends StatelessWidget {
             children: [
               Text(
                 "Forgot password?",
-                style: AppFont.input,
+                style: AppFont.h6,
               ),
               8.widthBox,
               Text(
                 "Reset",
-                style: AppFont.input.copyWith(
+                style: AppFont.h6.copyWith(
                   color: AppColor.blue2,
                   fontWeight: FontWeight.bold,
                 ),
@@ -35,12 +35,12 @@ class LoginFooter extends StatelessWidget {
             children: [
               Text(
                 "Don't have an account?",
-                style: AppFont.input,
+                style: AppFont.h6,
               ),
               8.widthBox,
               Text(
                 "Sign Up",
-                style: AppFont.input.copyWith(
+                style: AppFont.h6.copyWith(
                   color: AppColor.blue2,
                   fontWeight: FontWeight.bold,
                 ),

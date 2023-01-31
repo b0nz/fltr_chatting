@@ -27,7 +27,7 @@ class _AppInputState extends State<AppInput> {
         controller: widget.controller,
         decoration: InputDecoration(
           hintText: widget.hint,
-          hintStyle: AppFont.input.copyWith(
+          hintStyle: AppFont.h6.copyWith(
             color: AppColor.grey3,
           ),
           prefixIcon: widget.prefixIcon,
