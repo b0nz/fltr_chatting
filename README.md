@@ -1,6 +1,6 @@
 # chatting
 
-A new Flutter project.
+Simple flutter chat app.
 
 ## Getting Started
 
