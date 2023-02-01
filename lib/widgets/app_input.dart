@@ -1,4 +1,3 @@
-import 'package:chatting/infrastructure/theme/app_color.dart';
 import 'package:chatting/infrastructure/theme/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -6,13 +5,15 @@ class AppInput extends StatefulWidget {
   final String hint;
   TextEditingController? controller;
   final Widget? prefixIcon;
+  final bool? obsecureText;
 
   AppInput({
-    super.key,
+    Key? key,
     required this.hint,
     this.controller,
     this.prefixIcon,
-  });
+    this.obsecureText,
+  }) : super(key: key);
 
   @override
   State<AppInput> createState() => _AppInputState();
@@ -25,6 +26,7 @@ class _AppInputState extends State<AppInput> {
       height: 40,
       child: TextFormField(
         controller: widget.controller,
+        obscureText: widget.obsecureText ?? false,
         decoration: InputDecoration(
           hintText: widget.hint,
           hintStyle: AppFont.h6.copyWith(

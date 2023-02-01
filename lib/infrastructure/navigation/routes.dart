@@ -1,7 +1,7 @@
 class Routes {
   static Future<String> get initialRoute async {
     // TODO: implement method
-    return CHAT_LIST;
+    return LOGIN;
   }
 
   static const CHAT_LIST = '/chat-list';
