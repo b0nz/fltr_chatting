@@ -1,6 +1,6 @@
 # chatting
 
-Simple flutter chat app.
+test simple flutter chat app.
 
 ## Getting Started
 
